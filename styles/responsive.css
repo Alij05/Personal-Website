@@ -1,0 +1,383 @@
+/* Override the Width of Container */
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .home__image {
+         width: 45rem;
+         height: 45rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .home{
+        height: 75rem;
+    }
+    .home__svg {
+        top: 60rem;
+    }
+    .home__job {
+        font-size: 4.5rem;
+    }
+
+    .service {
+        padding: 4rem;
+    }
+    .service__title {
+        font-size: 2.2rem;
+    }
+
+    .skills__list {
+        flex-basis: 35%;
+    }
+    .skill__item--active::before {
+        width: 28rem;
+    }
+    
+    .resume__description {
+        flex-basis: 61%;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .menu__item {
+        margin-left: 2.3rem;
+    }
+    .nav__logo {
+        font-size: 3.5rem;
+    }
+
+    .home {
+        margin-top: 6rem;
+        height: 105rem;
+    }
+    .home .row {
+        flex-direction: column-reverse;
+    }
+    .home__context {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__buttons {
+        justify-content: center;
+    }
+    .home__image {
+        margin: 0 auto 4rem;
+    }
+    .home__svg {
+        top: 85rem;
+    }
+
+    .about-us__wrapper {
+        flex-direction: column;
+    }
+    .about-us__picture,
+    .about-us__information {
+        flex-basis: auto;
+    }
+    .about-us__buttons {
+        justify-content: center;
+    }
+
+    .about-us__information {
+        padding: 2rem;
+    }
+
+    .skills__list {
+        flex-basis: 42%;
+        padding: 4rem 1.5rem 4rem 2rem;
+    }
+    .skill__item::before {
+        width: 5.5rem;
+    }
+    .skill__item--active::before {
+        width: 25rem;
+    }
+    .skill__name {
+        font-size: 1.8rem;
+    }
+    .skill__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .resume__description {
+        flex-basis: 56%;
+    }
+    .description__text {
+        font-size: 1.9rem;
+    }
+    .description__year {
+        font-size: 1.4rem;
+        padding: 0.6rem 1.2rem;
+    }
+    .description__context {
+        font-size: 1.5rem;
+    }
+    .description__caption {
+        font-size: 1.4rem;
+    }
+   
+    .portfolio__example {
+        width: 12rem;
+    }
+
+    .pricing__content {
+        margin-bottom: 1.5rem;
+    }
+    
+    .map__icon-wrapper {
+        display: none;
+    }
+    .sign-up {
+        margin-right: auto;
+    }
+
+    .footer__copyright {
+        flex-basis: 40%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__icon {
+        display: block;
+    }
+    .nav__logo {
+        font-size: 4rem;
+    }
+
+    .menu {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--section-bg-color);
+        transition: all 200ms ease-in;
+
+        height: 0;
+        overflow: hidden;
+    }
+    .menu--open {
+        height: 31rem;
+    }
+    .menu__item {
+        padding: 1rem 0;
+        margin-left: 0;
+    }
+    
+    .cover {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0,15%);
+        transition: all 200ms ease-in;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        z-index: -1;
+        opacity: 0;
+    }
+    .cover--show {
+        opacity: 1;
+        z-index: 99;
+    }
+
+    .home {
+        background-image: none;
+        height: auto;
+    }
+    .home__image {
+        width: 40rem;
+        height: 40rem;
+   }
+
+    .service {
+        height: 34rem;
+        padding: 4rem 5rem 2rem;
+    }
+    .service__shape {
+        bottom: -7rem;
+    }
+
+    .resume__wrapper {
+        flex-direction: column;
+    }
+
+    .skill__item--active::before {
+        width: 30rem;
+    }
+    .resume__description {
+        flex-basis: auto;
+        margin-top: 3rem;
+    }
+    .resume__description::before {
+        left: 1rem;
+    }
+    .description__title::before {
+        left: -6.1rem;
+    }
+    
+    .skills__list::before,
+    .skill__item::before,
+    .resume__description::before,
+    .description__title::before  {
+        content: none;
+    }
+    .skills__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        box-shadow: none;
+        background-color: transparent;
+        min-height: auto;
+        padding: 1rem 0 3rem;
+        gap: 0.5rem;
+    }
+    .skill__item {
+        display: block;
+        /* background-color: var(--primary-color); */
+        margin-bottom: 0;
+        border-radius: 4rem;
+        padding: 1.2rem 2.5rem;
+        transition: all 150ms ease-in;
+    }
+    .skill__item--active {
+        background-color: var(--primary-color);   
+    }
+    .skill__icon {
+        display: none;
+    }
+    .skill__name {
+        margin-left: 0;
+        font-family: "Poppins SemiBold";
+        font-size: 1.6rem;
+    }
+    .resume__description {
+        padding: 0;
+    }
+    
+    
+    .portfolio__buttons {
+        justify-content: flex-start;
+    }
+    .portfolio__example {
+        width: 13rem;
+    }
+
+    .footer__wrapper {
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    * {
+        cursor: default !important;
+    }
+
+    .home__image {
+        width: 32rem;
+        height: 32rem;
+    }
+    .home__job {
+        font-size: 3.5rem;
+    }
+    .home__title {
+        font-size: 2rem;
+    }
+    .home__svg {
+        top: 65rem;
+    }
+
+    .service {
+        padding: 4rem 3rem;
+    }
+    .service__shape {
+        bottom: 0;
+    }
+
+    .description__year {
+        width: 10rem;
+    }
+
+  
+}
+
+@media screen and (max-width: 400px) {
+    .home__image {
+        width: 24rem;
+        height: 24rem;
+        border-width: 1.5rem;
+    }
+    .home__title {
+        font-size: 1.8rem;
+    }
+    .home__job {
+        font-size: 2.9rem;
+    }
+    .home__buttons {
+        width: 100%;
+    }
+    .hire__btn {
+        width: 100%;
+    }
+    .resume__btn {
+        width: 100%;
+    }
+    .home__svg {
+        top: 67rem;
+    }
+
+    .about-us__btn {
+        width: 100%;
+    }
+    .about-us__title {
+        font-size: 4rem;
+    }
+    .about-us__text {
+        font-size: 1.5rem;
+    }
+    .information__title {
+        font-size: 2.4rem;
+    }
+    .information__text {
+        font-size: 1.4rem;
+    }
+    .information__item {
+        font-size: 1.4rem;
+    }
+    .information__list {
+        padding: 0;
+    }
+    
+    .service {
+        padding: 3rem 2rem;
+    }
+
+    .skill__item--active::before {
+        width: 24rem;
+    }
+    .description__title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .description__year {
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+    }
+
+
+}
+
+
